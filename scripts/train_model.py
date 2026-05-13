@@ -1,14 +1,20 @@
 """
-Trenira Weighted Physics-Augmented LightGBM (winner model iz izvjestaja, Approach i).
+Trains the Physics-Augmented LightGBM model (winner model from the report, Approach i).
 
-Hiperparametri iz izvjestaja:
+Hyperparameters from the report:
   n_estimators=182, learning_rate=0.05, num_leaves=4, min_child_samples=3,
   max_depth=2, feature_fraction=0.8, reg_lambda=0.5, reg_alpha=0.1
 
 Features: Infill Pattern OHE + Aeff (Effective Load-Bearing Area) + Dnorm (Arrhenius)
-Target: mean UTS po Run-u
-Sample weights: 1 / std (visi weight za manje sumovita mjerenja)
-Validacija: 5-fold CV na 33-tockama
+Target: mean UTS per Run
+
+Sample weighting: uniform (no weighting).
+Rationale: scripts/compare_weighting.py showed that with only 3 replicates per
+condition, 1/std weights are dominated by statistical noise in the std estimate
+(a single near-zero-std Run got 226x more weight than others). Uniform weighting
+gave best Test R^2 (0.77 vs 0.45) and CV R^2 (0.25 vs 0.09).
+
+Validation: 5-fold CV on the 33 mean-UTS points (80/20 train/test split first).
 """
 
 from __future__ import annotations
@@ -71,8 +77,14 @@ def build_features(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def compute_sample_weights(std_values: pd.Series) -> np.ndarray:
-    eps = 1e-3
-    return 1.0 / (std_values.fillna(std_values.mean()).clip(lower=eps).to_numpy())
+    """
+    Uniform weights (every condition counted equally).
+
+    See module docstring for the rationale. The std_values argument is kept
+    so the function signature stays stable if you want to A/B-test other
+    weighting schemes via scripts/compare_weighting.py.
+    """
+    return np.ones(len(std_values))
 
 
 def cross_validate(X: pd.DataFrame, y: pd.Series, weights: np.ndarray) -> dict:

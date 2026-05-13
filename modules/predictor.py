@@ -102,7 +102,7 @@ class LightGBMUTSModel:
         import lightgbm as lgb
 
         self._booster = lgb.Booster(model_file=str(model_path))
-        self.uncertainty_mpa = 1.16
+        self.uncertainty_mpa = 1.15
 
     def predict(
         self,
