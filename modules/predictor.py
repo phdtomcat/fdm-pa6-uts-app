@@ -87,7 +87,7 @@ class LightGBMUTSModel:
       Aeff, Dnorm
     """
 
-    name = "LightGBM (Physics-Augmented, trained on 33 conditions)"
+    name = "LightGBM (Physics-Augmented, uniform weighting, trained on 33 conditions)"
     is_placeholder = False
 
     FEATURE_ORDER = [
