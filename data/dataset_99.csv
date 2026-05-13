@@ -1,0 +1,100 @@
+run,file,density_pct,temp_c,pattern,peak_force_N,uts_mpa
+1,Plan pokusa 15.11.2024 raw data.csv,60.0,260.0,Triangle-Hexa,171.868,14.322
+1,Plan pokusa 26.11.2024.csv,60.0,260.0,Triangle-Hexa,193.127,16.094
+1,Plan pokusa-6.11.2024.csv,60.0,260.0,Triangle-Hexa,154.673,12.889
+2,Plan pokusa 15.11.2024 raw data.csv,45.8579,254.142,Triangle,149.113,12.426
+2,Plan pokusa 26.11.2024.csv,45.8579,254.142,Triangle,155.633,12.969
+2,Plan pokusa-6.11.2024.csv,45.8579,254.142,Triangle,143.768,11.981
+3,Plan pokusa 15.11.2024 raw data.csv,60.0,240.0,Grid,152.05,12.671
+3,Plan pokusa 26.11.2024.csv,60.0,240.0,Grid,151.977,12.665
+3,Plan pokusa-6.11.2024.csv,60.0,240.0,Grid,152.316,12.693
+4,Plan pokusa 15.11.2024 raw data.csv,74.1421,225.858,Triangle,164.425,13.702
+4,Plan pokusa 26.11.2024.csv,74.1421,225.858,Triangle,166.942,13.912
+4,Plan pokusa-6.11.2024.csv,74.1421,225.858,Triangle,160.729,13.394
+5,Plan pokusa 15.11.2024 raw data.csv,45.8579,225.858,Triangle-Hexa,132.394,11.033
+5,Plan pokusa 26.11.2024.csv,45.8579,225.858,Triangle-Hexa,137.103,11.425
+5,Plan pokusa-6.11.2024.csv,45.8579,225.858,Triangle-Hexa,129.477,10.79
+6,Plan pokusa 15.11.2024 raw data.csv,60.0,240.0,Triangle,166.273,13.856
+6,Plan pokusa 26.11.2024.csv,60.0,240.0,Triangle,176.708,14.726
+6,Plan pokusa-6.11.2024.csv,60.0,240.0,Triangle,158.974,13.248
+7,Plan pokusa 15.11.2024 raw data.csv,45.8579,225.858,Grid,115.697,9.641
+7,Plan pokusa 26.11.2024.csv,45.8579,225.858,Grid,121.368,10.114
+7,Plan pokusa-6.11.2024.csv,45.8579,225.858,Grid,112.025,9.335
+8,Plan pokusa 15.11.2024 raw data.csv,40.0,240.0,Triangle-Hexa,127.886,10.657
+8,Plan pokusa 26.11.2024.csv,40.0,240.0,Triangle-Hexa,114.096,9.508
+8,Plan pokusa-6.11.2024.csv,40.0,240.0,Triangle-Hexa,143.239,11.937
+9,Plan pokusa 15.11.2024 raw data.csv,74.1421,254.142,Grid,186.226,15.519
+9,Plan pokusa 26.11.2024.csv,74.1421,254.142,Grid,191.919,15.993
+9,Plan pokusa-6.11.2024.csv,74.1421,254.142,Grid,259.452,21.621
+10,Plan pokusa 15.11.2024 raw data.csv,60.0,240.0,Triangle-Hexa,151.048,12.587
+10,Plan pokusa 26.11.2024.csv,60.0,240.0,Triangle-Hexa,171.97,14.331
+10,Plan pokusa-6.11.2024.csv,60.0,240.0,Triangle-Hexa,132.031,11.003
+11,Plan pokusa 15.11.2024 raw data.csv,74.1421,254.142,Triangle-Hexa,202.747,16.896
+11,Plan pokusa 26.11.2024.csv,74.1421,254.142,Triangle-Hexa,231.376,19.281
+11,Plan pokusa-6.11.2024.csv,74.1421,254.142,Triangle-Hexa,175.571,14.631
+12,Plan pokusa 15.11.2024 raw data.csv,40.0,240.0,Grid,112.56,9.38
+12,Plan pokusa 26.11.2024.csv,40.0,240.0,Grid,115.196,9.6
+12,Plan pokusa-6.11.2024.csv,40.0,240.0,Grid,111.334,9.278
+13,Plan pokusa 15.11.2024 raw data.csv,45.8579,254.142,Triangle-Hexa,162.405,13.534
+13,Plan pokusa 26.11.2024.csv,45.8579,254.142,Triangle-Hexa,167.236,13.936
+13,Plan pokusa-6.11.2024.csv,45.8579,254.142,Triangle-Hexa,159.771,13.314
+14,Plan pokusa 15.11.2024 raw data.csv,45.8579,225.858,Triangle,100.332,8.361
+14,Plan pokusa 26.11.2024.csv,45.8579,225.858,Triangle,99.678,8.306
+14,Plan pokusa-6.11.2024.csv,45.8579,225.858,Triangle,102.987,8.582
+15,Plan pokusa 15.11.2024 raw data.csv,60.0,240.0,Triangle-Hexa,173.99,14.499
+15,Plan pokusa 26.11.2024.csv,60.0,240.0,Triangle-Hexa,183.26,15.272
+15,Plan pokusa-6.11.2024.csv,60.0,240.0,Triangle-Hexa,165.197,13.766
+16,Plan pokusa 15.11.2024 raw data.csv,60.0,240.0,Triangle-Hexa,170.605,14.217
+16,Plan pokusa 26.11.2024.csv,60.0,240.0,Triangle-Hexa,181.748,15.146
+16,Plan pokusa-6.11.2024.csv,60.0,240.0,Triangle-Hexa,157.262,13.105
+17,Plan pokusa 15.11.2024 raw data.csv,74.1421,225.858,Grid,164.775,13.731
+17,Plan pokusa 26.11.2024.csv,74.1421,225.858,Grid,172.532,14.378
+17,Plan pokusa-6.11.2024.csv,74.1421,225.858,Grid,154.802,12.9
+18,Plan pokusa 15.11.2024 raw data.csv,74.1421,254.142,Triangle,214.728,17.894
+18,Plan pokusa 26.11.2024.csv,74.1421,254.142,Triangle,228.046,19.004
+18,Plan pokusa-6.11.2024.csv,74.1421,254.142,Triangle,202.427,16.869
+19,Plan pokusa 15.11.2024 raw data.csv,60.0,240.0,Triangle,165.476,13.79
+19,Plan pokusa 26.11.2024.csv,60.0,240.0,Triangle,174.542,14.545
+19,Plan pokusa-6.11.2024.csv,60.0,240.0,Triangle,159.206,13.267
+20,Plan pokusa 15.11.2024 raw data.csv,60.0,220.0,Triangle,129.054,10.754
+20,Plan pokusa 26.11.2024.csv,60.0,220.0,Triangle,131.566,10.964
+20,Plan pokusa-6.11.2024.csv,60.0,220.0,Triangle,124.566,10.38
+21,Plan pokusa 15.11.2024 raw data.csv,60.0,220.0,Grid,127.259,10.605
+21,Plan pokusa 26.11.2024.csv,60.0,220.0,Grid,122.107,10.176
+21,Plan pokusa-6.11.2024.csv,60.0,220.0,Grid,130.016,10.835
+22,Plan pokusa 15.11.2024 raw data.csv,60.0,240.0,Grid,131.112,10.926
+22,Plan pokusa 26.11.2024.csv,60.0,240.0,Grid,131.861,10.988
+22,Plan pokusa-6.11.2024.csv,60.0,240.0,Grid,128.8,10.733
+23,Plan pokusa 15.11.2024 raw data.csv,40.0,240.0,Triangle,126.711,10.559
+23,Plan pokusa 26.11.2024.csv,40.0,240.0,Triangle,121.396,10.116
+23,Plan pokusa-6.11.2024.csv,40.0,240.0,Triangle,129.037,10.753
+24,Plan pokusa 15.11.2024 raw data.csv,80.0,240.0,Triangle,209.896,17.491
+24,Plan pokusa 26.11.2024.csv,80.0,240.0,Triangle,231.547,19.296
+24,Plan pokusa-6.11.2024.csv,80.0,240.0,Triangle,186.448,15.537
+25,Plan pokusa 15.11.2024 raw data.csv,60.0,240.0,Grid,141.836,11.82
+25,Plan pokusa 26.11.2024.csv,60.0,240.0,Grid,140.672,11.723
+25,Plan pokusa-6.11.2024.csv,60.0,240.0,Grid,140.003,11.667
+26,Plan pokusa 15.11.2024 raw data.csv,80.0,240.0,Triangle-Hexa,208.893,17.408
+26,Plan pokusa 26.11.2024.csv,80.0,240.0,Triangle-Hexa,220.591,18.383
+26,Plan pokusa-6.11.2024.csv,80.0,240.0,Triangle-Hexa,194.804,16.234
+27,Plan pokusa 15.11.2024 raw data.csv,60.0,260.0,Grid,167.173,13.931
+27,Plan pokusa 26.11.2024.csv,60.0,260.0,Grid,168.107,14.009
+27,Plan pokusa-6.11.2024.csv,60.0,260.0,Grid,165.311,13.776
+28,Plan pokusa 15.11.2024 raw data.csv,74.1421,225.858,Triangle-Hexa,175.86,14.655
+28,Plan pokusa 26.11.2024.csv,74.1421,225.858,Triangle-Hexa,193.737,16.145
+28,Plan pokusa-6.11.2024.csv,74.1421,225.858,Triangle-Hexa,155.023,12.919
+29,Plan pokusa 15.11.2024 raw data.csv,80.0,240.0,Grid,222.423,18.535
+29,Plan pokusa 26.11.2024.csv,80.0,240.0,Grid,241.499,20.125
+29,Plan pokusa-6.11.2024.csv,80.0,240.0,Grid,201.167,16.764
+30,Plan pokusa 15.11.2024 raw data.csv,45.8579,254.142,Grid,150.861,12.572
+30,Plan pokusa 26.11.2024.csv,45.8579,254.142,Grid,154.84,12.903
+30,Plan pokusa-6.11.2024.csv,45.8579,254.142,Grid,147.096,12.258
+31,Plan pokusa 15.11.2024 raw data.csv,60.0,240.0,Triangle,171.724,14.31
+31,Plan pokusa 26.11.2024.csv,60.0,240.0,Triangle,173.515,14.46
+31,Plan pokusa-6.11.2024.csv,60.0,240.0,Triangle,168.139,14.012
+32,Plan pokusa 15.11.2024 raw data.csv,60.0,260.0,Triangle,177.77,14.814
+32,Plan pokusa 26.11.2024.csv,60.0,260.0,Triangle,189.238,15.77
+32,Plan pokusa-6.11.2024.csv,60.0,260.0,Triangle,164.301,13.692
+33,Plan pokusa 15.11.2024 raw data.csv,60.0,220.0,Triangle-Hexa,146.628,12.219
+33,Plan pokusa 26.11.2024.csv,60.0,220.0,Triangle-Hexa,136.582,11.382
+33,Plan pokusa-6.11.2024.csv,60.0,220.0,Triangle-Hexa,153.429,12.786
