@@ -39,7 +39,7 @@ def render_process_inputs(key_prefix: str) -> ProcessInputs:
             value=DENSITY_DEFAULT,
             step=DENSITY_STEP,
             key=f"{key_prefix}_density",
-            help="Training domain range: 20–80 %",
+            help="Training domain range: 40–80 %",
         )
     with col2:
         temp = st.number_input(
@@ -49,7 +49,7 @@ def render_process_inputs(key_prefix: str) -> ProcessInputs:
             value=TEMP_DEFAULT,
             step=TEMP_STEP,
             key=f"{key_prefix}_temp",
-            help="Training domain range: 250–280 °C",
+            help="Training domain range: 220–260 °C",
         )
     with col3:
         pattern = st.selectbox(

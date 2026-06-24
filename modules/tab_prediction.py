@@ -6,6 +6,7 @@ from __future__ import annotations
 
 import streamlit as st
 
+from .config import DENSITY_MAX, DENSITY_MIN, TEMP_MAX, TEMP_MIN
 from .inputs import render_process_inputs
 from .predictor import PlaceholderUTSModel
 
@@ -17,15 +18,54 @@ def render(model: PlaceholderUTSModel) -> None:
         "Ultimate Tensile Strength with an uncertainty band."
     )
 
+    _render_domain_box()
+
     inputs = render_process_inputs(key_prefix="predict")
 
     if st.button("Compute prediction", type="primary", use_container_width=True):
+        _warn_if_out_of_domain(inputs)
         result = model.predict(
             density_pct=inputs.density_pct,
             temp_c=inputs.temp_c,
             pattern=inputs.pattern,
         )
         _show_result(result)
+
+
+def _render_domain_box() -> None:
+    """Prominent box telling the user the range in which the model is valid."""
+    with st.container(border=True):
+        st.markdown("### ⚠️ Valid model domain — print inside these ranges")
+        st.markdown(
+            f"- **Infill density:** {DENSITY_MIN:.0f} – {DENSITY_MAX:.0f} %\n"
+            f"- **Nozzle temperature:** {TEMP_MIN:.0f} – {TEMP_MAX:.0f} °C\n"
+            "- **Infill pattern:** Grid · Triangle · Triangle-Hexa"
+        )
+        st.markdown(
+            "The model is tree-based (LightGBM) and **cannot extrapolate**. "
+            "Outside this envelope it returns a flat, capped value and will "
+            "systematically **under-predict** stronger specimens. For meaningful "
+            "results, print and test specimens **within** these ranges."
+        )
+
+
+def _warn_if_out_of_domain(inputs) -> None:
+    """Defensive check in case inputs ever land outside the training envelope."""
+    issues = []
+    if not (DENSITY_MIN <= inputs.density_pct <= DENSITY_MAX):
+        issues.append(
+            f"density {inputs.density_pct:.0f} % is outside {DENSITY_MIN:.0f}–{DENSITY_MAX:.0f} %"
+        )
+    if not (TEMP_MIN <= inputs.temp_c <= TEMP_MAX):
+        issues.append(
+            f"temperature {inputs.temp_c:.0f} °C is outside {TEMP_MIN:.0f}–{TEMP_MAX:.0f} °C"
+        )
+    if issues:
+        st.error(
+            "🚫 **Extrapolation — prediction unreliable.** "
+            + "; ".join(issues)
+            + ". The model has no training data here and will under-predict."
+        )
 
 
 def _show_result(result) -> None:

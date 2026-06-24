@@ -19,8 +19,11 @@ ETA_COEFFICIENTS: dict[InfillPattern, float] = {
 EA_PA6_J_PER_MOL = 68_000.0
 R_GAS = 8.314
 
-T_MIN_C = 250.0
-T_MAX_C = 280.0
+# Normalization range for Dnorm must match the training-data temperature
+# envelope (dataset_33.csv: 220-260 C), otherwise Dnorm is on a different scale
+# than what the model learned on.
+T_MIN_C = 220.0
+T_MAX_C = 260.0
 
 
 def effective_load_bearing_area(density_pct: float, pattern: InfillPattern) -> float:
